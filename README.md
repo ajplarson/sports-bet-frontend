@@ -88,3 +88,10 @@ https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-
 ## Author
 
 - Steven Tey ([@steventey](https://twitter.com/steventey))
+
+
+
+
+notes:
+run `npx prisma migrate dev --name init` to create schema in postgres
+https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/using-prisma-migrate-typescript-postgres
