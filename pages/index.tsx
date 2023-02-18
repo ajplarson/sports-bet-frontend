@@ -9,6 +9,9 @@ import LinkGroup from "@/components/shared/links/link-group";
 import Hero from "@/components/shared/hero";
 
 export default function Home() {
+  const headingText = "Building blocks for your Next project";
+  const subheadingText =
+    "An opinionated collection of components, hooks, and utilities for your Next.js project.";
   return (
     <Layout>
       <motion.div
@@ -26,7 +29,7 @@ export default function Home() {
           },
         }}
       >
-        <Hero />
+        <Hero headingText={headingText} subHeadingText={subheadingText} />
         <LinkGroup />
       </motion.div>
       {/* here we are animating with Tailwind instead of Framer Motion because Framer Motion messes up the z-index for child components */}
