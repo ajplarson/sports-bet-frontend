@@ -9,9 +9,9 @@ import LinkGroup from "@/components/shared/links/link-group";
 import Hero from "@/components/shared/hero";
 
 export default function Home() {
-  const headingText = "Building blocks for your Next project";
+  const headingText = "Place your bets!";
   const subheadingText =
-    "An opinionated collection of components, hooks, and utilities for your Next.js project.";
+    "Use our statistics and data-driven AI to know more than the next person";
   return (
     <Layout>
       <motion.div
@@ -62,9 +62,8 @@ const features = [
     large: true,
   },
   {
-    title: "Performance first",
-    description:
-      "Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.",
+    title: "Neural Networks trained and ready to go",
+    description: "",
     demo: <WebVitals />,
   },
   {
@@ -94,17 +93,23 @@ const features = [
     ),
   },
   {
-    title: "Hooks, utilities, and more",
+    title: "Baseball, Basketball, and more",
     description:
       "Precedent offers a collection of hooks, utilities, and `@vercel/og`",
     demo: (
-      <div className="grid grid-flow-col grid-rows-3 gap-10 p-10">
-        <span className="font-mono font-semibold">useIntersectionObserver</span>
-        <span className="font-mono font-semibold">useLocalStorage</span>
-        <span className="font-mono font-semibold">useScroll</span>
-        <span className="font-mono font-semibold">nFormatter</span>
-        <span className="font-mono font-semibold">capitalize</span>
-        <span className="font-mono font-semibold">truncate</span>
+      <div className="flex items-center justify-center space-x-20">
+        <Image
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.z64Oo2hCXq9zZgVX5XkvKQHaHa%26pid%3DApi&f=1&ipt=718f38af176b8f758700cbe86ddb4237742d6ea1a0ed6cdf92f695949837fb5f&ipo=images"
+          alt="nba logo"
+          width={100}
+          height={100}
+        />
+        <Image
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.u0RclNEYs-V-hqzN9I5oewHaEK%26pid%3DApi&f=1&ipt=8db42543c01dc12344965e372dfdb46f14bcc83021ba2b85fa269694642a0351&ipo=images"
+          alt="nba logo"
+          width={100}
+          height={100}
+        />
       </div>
     ),
   },
