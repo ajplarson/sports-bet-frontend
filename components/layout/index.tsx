@@ -8,6 +8,7 @@ import useScroll from "@/lib/hooks/use-scroll";
 import Meta from "./meta";
 import { useSignInModal } from "./sign-in-modal";
 import UserDropdown from "./user-dropdown";
+import { SportsBetLogo } from "../shared/icons";
 
 export default function Layout({
   meta,
@@ -38,14 +39,8 @@ export default function Layout({
       >
         <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
           <Link href="/" className="flex items-center font-display text-2xl">
-            <Image
-              src="/logo.png"
-              alt="Precedent logo"
-              width="30"
-              height="30"
-              className="mr-2 rounded-sm"
-            />
-            <p>TODO: Header</p>
+            <SportsBetLogo />
+            <p>SportsBet</p>
           </Link>
           <div>
             <AnimatePresence>
@@ -67,9 +62,6 @@ export default function Layout({
       <main className="flex w-full flex-col items-center justify-center py-32">
         {children}
       </main>
-      <div className="absolute w-full border-t border-gray-200 bg-white py-5 text-center">
-        <p className="text-gray-500">TODO: Footer </p>
-      </div>
     </>
   );
 }

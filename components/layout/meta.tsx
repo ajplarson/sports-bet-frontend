@@ -1,10 +1,11 @@
 import Head from "next/head";
 
+//TODO: MAKE and replace
 const DOMAIN = "https://precedent.dev";
 
 export default function Meta({
-  title = "TODO:MetaTitle",
-  description = "TODO:MetaDescription",
+  title = "SportsBet",
+  description = "Discover the future of betting with our cutting-edge AI platform that accurately predicts game outcomes. Boost your chances of winning and stay ahead of the competition with unparalleled data-driven insights. Join us and revolutionize your sports betting experience!",
   image = `${DOMAIN}/api/og`,
 }: {
   title?: string;
